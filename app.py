@@ -25,8 +25,8 @@ def index():
             age = request.form['age']
 
             # Loading the saved models into memory
-            filename_scaler = 'standardScalar.sav'
-            filename = 'modelForPrediction_Log_reg'
+            filename_scaler = 'final_scaler.sav'
+            filename = 'final_log_reg.sav'
             scaler_model = pickle.load(open(filename_scaler, 'rb'))
             loaded_model = pickle.load(open(filename, 'rb'))
 
